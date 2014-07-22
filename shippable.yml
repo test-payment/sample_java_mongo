@@ -11,6 +11,3 @@ script:
    - ant clean
    - ant coverage
    
-notifications:
-  email: false
-
