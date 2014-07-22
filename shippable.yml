@@ -5,8 +5,10 @@ jdk:
    - openjdk6
    - openjdk7
    
+   
 services:
    - mongodb
+   
 script:
    - ant clean
    - ant coverage
