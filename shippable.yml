@@ -13,3 +13,4 @@ script:
    - ant clean
    - ant coverage
    
+archive: true
