@@ -15,3 +15,5 @@ script:
    - ant coverage
    
 archive: true
+
+parallelized_test: true
