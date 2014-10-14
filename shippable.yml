@@ -14,7 +14,8 @@ services:
 script:
    - ant clean
    - ant coverage
-   
+after_script:
+   - cp README.md ./shippable  
 archive: true
 
 parallelized_test: true
