@@ -3,8 +3,8 @@ language: java
 jdk:
    - oraclejdk7
    - openjdk7
-   - openjdk6
-   #- oraclejdk8
+   #- openjdk6
+   - oraclejdk8
   
 services:
    - mongodb
@@ -15,8 +15,9 @@ script:
 after_script:
    - cp README.md ./shippable  
 
+
 archive: true
 
 parallelized_test: true
 
-#cache: true
+cache: true
