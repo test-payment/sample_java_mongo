@@ -1,6 +1,5 @@
 language: java
 
-
 jdk:
    - oraclejdk7
    - openjdk7
@@ -14,6 +13,7 @@ services:
 script:
    - ant clean
    - ant coverage
+   
 after_script:
    - cp README.md ./shippable  
 
@@ -22,4 +22,4 @@ archive: true
 parallelized_test: true
 
 #cache: true
-shippableNewBuildStatusFlow: true
+#shippableNewBuildStatusFlow: true
