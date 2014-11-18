@@ -22,5 +22,4 @@ archive: true
 parallelized_test: true
 
 #cache: true
-env:
- shippableNewBuildStatusFlow: true
+shippableNewBuildStatusFlow: true
