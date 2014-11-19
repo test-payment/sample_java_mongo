@@ -6,7 +6,8 @@ jdk:
    - openjdk6
    - oraclejdk8
    
-   
+ 
+  
 services:
    - mongodb
    
