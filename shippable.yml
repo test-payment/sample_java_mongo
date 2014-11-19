@@ -1,4 +1,4 @@
-language: java
+language: testing
 
 jdk:
    - oraclejdk7
