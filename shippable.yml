@@ -6,6 +6,7 @@ jdk:
    - openjdk7
    - openjdk6
    - oraclejdk8
+
   
 services:
    - mongodb
@@ -14,6 +15,7 @@ services:
 script:
    - ant clean
    - ant coverage
+
 
 after_script:
    - cp README.md ./shippable  
