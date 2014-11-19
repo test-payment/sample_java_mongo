@@ -1,5 +1,6 @@
 language: java
 
+
 jdk:
    - oraclejdk7
    - openjdk7
@@ -8,10 +9,12 @@ jdk:
   
 services:
    - mongodb
+ 
    
 script:
    - ant clean
    - ant coverage
+
 after_script:
    - cp README.md ./shippable  
 
