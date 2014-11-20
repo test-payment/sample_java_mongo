@@ -1,4 +1,4 @@
-language: testing
+language: java
 
 
 jdk:
