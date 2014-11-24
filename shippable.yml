@@ -5,21 +5,19 @@ jdk:
    - openjdk7
    - openjdk6
    - oraclejdk8
-
+env:
+ - secure: p0XLdza1R6PviS3ME+nHQ2Ju7AwkVxszxcJDS62E0hcFWMtm5CNJz0p58q9iSYkY5lpim6C4qTsN8zWNKpKBN2uZujZWKN77JdrUUw+bcxPK+9bqgT0LNrjj1/k6UL1xbLrBWM2576cj1W5I3sYArnzv53FUZf4IefMo+uxLSa5QBA+AT0Be4DlNuAqLE62c2jls6hyQ4EcfPVJup63Dvcxem0/fpV6ec2lFMEtjcsel5+LPUK72bj3X5++XvG4+AkZC338Ui+xI6Hin3HcZE0QYDRDl+pDyXfaRMmiQlA5Ahek1C3Uv7S4LPmct8QGkNQ5K6i7+zHg3sD+hPf2EJw==
   
 services:
    - mongodb
- 
-   
+
 script:
    - ant clean
    - ant coverage
-
+   - echo $test_env
 
 after_script:
    - cp README.md ./shippable  
-
-
 
 archive: true
 
