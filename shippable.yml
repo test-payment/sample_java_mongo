@@ -17,14 +17,16 @@ services:
 script:
    - ant clean
    - ant coverage
+  
    
 after_script:
    - cp README.md ./shippable  
   # - echo $test1 and $test2
 
+
 archive: true
 
 
-#parallelized_test: true
+parallelized_test: true
 
 #cache: true
