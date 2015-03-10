@@ -24,7 +24,9 @@ after_script:
 
 archive: true
 
-
+branches:
+  except:
+    - test#20
 #parallelized_test: true
 
 #cache: true
