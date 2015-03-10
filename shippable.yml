@@ -25,8 +25,9 @@ after_script:
 archive: true
 
 branches:
-  except:
+  only:
     - test#20
+    - test#2020
 #parallelized_test: true
 
 #cache: true
