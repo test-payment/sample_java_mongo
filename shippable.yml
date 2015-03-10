@@ -1,8 +1,10 @@
 language: java
 
 env:
- - secure: IMQ5dkY8PFm3vU858yq5yYAlEj263vyRdcHZp32hnsc9j3dcV5RuhWolFlOW7V3jGIbwzBY4SStGwwG3Yq7Wpkqg/hpRbFmXFA0r83DBlK+zIog4elynH8Qu1/gXPGb7YN0PVewYBJLH6afFjPNX4jmew4EUn8TffpBJhmKSXu03y8IglecgSUhVzXT1+AxX/Z6jB6RSoexvgOAUuEgl6Mp0oNUjMg595i3qW6tkmnRUQRSHoM8b3wOXFjlaur2z8hQuPyGCyKGAwg0vKmMkZc+NOJIDtbssAJwwi5JkqAdTJ4Az5cWKrkBmIuo0ceBJ9WLSWARSQt8gbGm6qliWeQ==
-
+ global:
+  - secure: aQbQZ7RbBWE+xkvgKDuk7SQosRwpsqjztNn9adVsDkRwkStX/O0B+nyetdcuCb2+Qu5r5Jc5UaiZzcrXpDTqdZ+N1zzmwLVKSKbSgNIPWio/53tv+Ag5+SMLOEGhIZAciCQLhsCtYau79gjHbmcEaz0/zB81Cn/jRlfkcH9TaejERJJ9JeIymjkvqeP/5XmVBD/TcHz1qgbCL7vIHK/gyZ0b5CUtR8I2u/lQFSC5pxB5Iei+f0eHDq9+oX1Cg+lrPdoahUp4GLaCD1wIzGZgq+3BcIvCFVuicpbeGthwIa1nz9dlGFb1vQsFXJpIE7b14gfl6PkB4wshBaGOC0PrBg==
+  - secure: IMQ5dkY8PFm3vU858yq5yYAlEj263vyRdcHZp32hnsc9j3dcV5RuhWolFlOW7V3jGIbwzBY4SStGwwG3Yq7Wpkqg/hpRbFmXFA0r83DBlK+zIog4elynH8Qu1/gXPGb7YN0PVewYBJLH6afFjPNX4jmew4EUn8TffpBJhmKSXu03y8IglecgSUhVzXT1+AxX/Z6jB6RSoexvgOAUuEgl6Mp0oNUjMg595i3qW6tkmnRUQRSHoM8b3wOXFjlaur2z8hQuPyGCyKGAwg0vKmMkZc+NOJIDtbssAJwwi5JkqAdTJ4Az5cWKrkBmIuo0ceBJ9WLSWARSQt8gbGm6qliWeQ==
+  - Foo=bar
 #build_image: shippable/minv2:beta
 
 jdk:
@@ -20,6 +22,7 @@ script:
    
 after_script:
    - cp README.md ./shippable  
+   - echo $test
   # - echo $test1 and $test2
 
 archive: true
