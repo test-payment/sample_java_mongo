@@ -1,5 +1,6 @@
 language: java
 
+
 env:
  - secure: IMQ5dkY8PFm3vU858yq5yYAlEj263vyRdcHZp32hnsc9j3dcV5RuhWolFlOW7V3jGIbwzBY4SStGwwG3Yq7Wpkqg/hpRbFmXFA0r83DBlK+zIog4elynH8Qu1/gXPGb7YN0PVewYBJLH6afFjPNX4jmew4EUn8TffpBJhmKSXu03y8IglecgSUhVzXT1+AxX/Z6jB6RSoexvgOAUuEgl6Mp0oNUjMg595i3qW6tkmnRUQRSHoM8b3wOXFjlaur2z8hQuPyGCyKGAwg0vKmMkZc+NOJIDtbssAJwwi5JkqAdTJ4Az5cWKrkBmIuo0ceBJ9WLSWARSQt8gbGm6qliWeQ==
 
@@ -24,10 +25,15 @@ after_script:
 
 archive: true
 
+
 branches:
   only:
     - test#20
     - test#2020
+    - test/2020
 #parallelized_test: true
 
+
 #cache: true
+
+
